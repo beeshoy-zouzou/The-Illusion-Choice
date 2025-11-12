@@ -1,13 +1,15 @@
 # Godot-specific
 .import/
+.export/
 export.cfg
 export_presets.cfg
+*.godot
 
 # C# build artifacts
-.mono/
-.mono/assemblies/
-.mono/temp/
-.mono/build/
+*.mono/
+*.mono/assemblies/
+*.mono/temp/
+*.mono/build/
 
 # OS junk
 .DS_Store
