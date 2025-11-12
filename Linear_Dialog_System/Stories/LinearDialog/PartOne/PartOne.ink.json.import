@@ -1,0 +1,14 @@
+[remap]
+
+importer="inkgd.ink.json"
+type="Resource"
+path="res://.import/PartOne.ink.json-9314df72eb5ecde210d552ecd33e8a34.res"
+
+[deps]
+
+source_file="res://Stories/LinearDialog/PartOne/PartOne.ink.json"
+dest_files=[ "res://.import/PartOne.ink.json-9314df72eb5ecde210d552ecd33e8a34.res" ]
+
+[params]
+
+compress=true

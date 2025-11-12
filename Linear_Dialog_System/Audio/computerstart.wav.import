@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/computerstart.wav-157bf076d1820fb2df4b5a1b527761be.sample"
+
+[deps]
+
+source_file="res://Audio/computerstart.wav"
+dest_files=[ "res://.import/computerstart.wav-157bf076d1820fb2df4b5a1b527761be.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

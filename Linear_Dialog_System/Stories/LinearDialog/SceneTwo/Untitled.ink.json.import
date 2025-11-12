@@ -1,0 +1,14 @@
+[remap]
+
+importer="inkgd.ink.json"
+type="Resource"
+path="res://.import/Untitled.ink.json-a75766decd1749093fe63b767382ca21.res"
+
+[deps]
+
+source_file="res://Stories/LinearDialog/SceneTwo/Untitled.ink.json"
+dest_files=[ "res://.import/Untitled.ink.json-a75766decd1749093fe63b767382ca21.res" ]
+
+[params]
+
+compress=true

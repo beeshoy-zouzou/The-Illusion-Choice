@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/doorlock.wav-67fb8623aae2b268b4710c039ab5e2da.sample"
+
+[deps]
+
+source_file="res://Audio/doorlock.wav"
+dest_files=[ "res://.import/doorlock.wav-67fb8623aae2b268b4710c039ab5e2da.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

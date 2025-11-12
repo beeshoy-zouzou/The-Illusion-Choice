@@ -1,0 +1,125 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Assets/Images/background_mainmenu.jpeg" type="Texture" id=1]
+[ext_resource path="res://Assets/Fonts/OpenType-TT/UT Shadigo Trial.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Scripts/FinalScene.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Fonts/Silver.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Audio/main_menu.wav" type="AudioStream" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+font_data = ExtResource( 2 )
+
+[node name="FinalScene" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FadeOverlay" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+margin_right = 1024.0
+margin_bottom = 600.0
+custom_constants/separation = 30
+
+[node name="The End" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_right = 1024.0
+margin_bottom = 33.0
+custom_fonts/font = SubResource( 1 )
+text = "The End"
+align = 1
+valign = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+margin_right = 1024.0
+margin_bottom = 600.0
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+margin_left = 212.0
+margin_right = 812.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 600, 200 )
+alignment = 1
+
+[node name="Message" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+margin_top = 109.0
+margin_right = 600.0
+margin_bottom = 329.0
+rect_min_size = Vector2( 0, 220 )
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = true
+bbcode_text = "Thanks for trying this out!
+
+This short experience was part of a dialog system prototype
+developed for my master's thesis titled *Analysing Dialog Systems in Story-Driven Games*.
+
+The game will be expanded in future versions."
+text = "Thanks for trying this out!
+
+This short experience was part of a dialog system prototype
+developed for my master's thesis titled *Analysing Dialog Systems in Story-Driven Games*.
+
+The game will be expanded in future versions."
+
+[node name="CreditLine" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+margin_top = 333.0
+margin_right = 600.0
+margin_bottom = 453.0
+rect_min_size = Vector2( 0, 120 )
+custom_fonts/normal_font = SubResource( 3 )
+bbcode_enabled = true
+bbcode_text = "Dialog System Prototype – Master’s Thesis, Beeshoy Metry, University of Klagenfurt, 2025"
+text = "Dialog System Prototype – Master’s Thesis, Beeshoy Metry, University of Klagenfurt, 2025"
+
+[node name="Exit" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+margin_top = 457.0
+margin_right = 600.0
+margin_bottom = 490.0
+custom_fonts/font = SubResource( 4 )
+text = "Exit"
+flat = true
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Exit" to="." method="_on_Exit_pressed"]

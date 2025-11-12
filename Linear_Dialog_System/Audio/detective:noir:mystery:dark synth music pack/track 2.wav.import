@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/track 2.wav-aadb1527f66e948a3d296bbe30a43f8b.sample"
+
+[deps]
+
+source_file="res://Audio/detective:noir:mystery:dark synth music pack/track 2.wav"
+dest_files=[ "res://.import/track 2.wav-aadb1527f66e948a3d296bbe30a43f8b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

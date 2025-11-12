@@ -1,0 +1,81 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scripts/DialogSystem/SecondDialogSystem.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Fonts/Silver.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Audio/choice.wav" type="AudioStream" id=3]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.305882, 0.203922, 0.180392, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.427451, 0.298039, 0.254902, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="DynamicFont" id=2]
+size = 22
+font_data = ExtResource( 2 )
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="DialogSystem" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DialogBox" type="Panel" parent="DialogSystem"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -295.0
+margin_top = -95.0
+margin_right = 295.0
+margin_bottom = 95.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DialogText" type="Label" parent="DialogSystem/DialogBox"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -281.5
+margin_top = -83.5
+margin_right = 282.5
+margin_bottom = -3.5
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 0.878431, 0.509804, 1 )
+text = "This is Beeshoy"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChoiceContainer" type="VBoxContainer" parent="DialogSystem/DialogBox"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -282.0
+margin_top = -65.017
+margin_right = 283.0
+margin_bottom = -15.017
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="DialogSystem/DialogBox"]
+
+[node name="ChoiceSound" type="AudioStreamPlayer" parent="DialogSystem"]
+stream = ExtResource( 3 )
+volume_db = -15.0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ScrollSound.wav-466daae29852833b4e20862b2ac51d51.sample"
+
+[deps]
+
+source_file="res://Audio/ScrollSound.wav"
+dest_files=[ "res://.import/ScrollSound.wav-466daae29852833b4e20862b2ac51d51.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

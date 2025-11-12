@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mobilering.wav-b4e849c181708e19aab322aad9b71ce5.sample"
+
+[deps]
+
+source_file="res://Audio/mobilering.wav"
+dest_files=[ "res://.import/mobilering.wav-b4e849c181708e19aab322aad9b71ce5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,14 @@
+[remap]
+
+importer="inkgd.ink.json"
+type="Resource"
+path="res://.import/Untitled.ink.json-82c6fd53d0e8dd42bb8a794384daffcb.res"
+
+[deps]
+
+source_file="res://Stories/Butler/Untitled.ink.json"
+dest_files=[ "res://.import/Untitled.ink.json-82c6fd53d0e8dd42bb8a794384daffcb.res" ]
+
+[params]
+
+compress=true

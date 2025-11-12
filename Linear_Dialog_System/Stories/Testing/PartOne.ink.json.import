@@ -1,0 +1,14 @@
+[remap]
+
+importer="inkgd.ink.json"
+type="Resource"
+path="res://.import/PartOne.ink.json-417e1da681133e2834631ba7ffc06275.res"
+
+[deps]
+
+source_file="res://Stories/Testing/PartOne.ink.json"
+dest_files=[ "res://.import/PartOne.ink.json-417e1da681133e2834631ba7ffc06275.res" ]
+
+[params]
+
+compress=true

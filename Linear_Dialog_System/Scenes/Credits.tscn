@@ -1,0 +1,197 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/Fonts/OpenType-TT/UT Shadigo Trial.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scripts/Credits.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 20
+font_data = ExtResource( 1 )
+
+[node name="Credits" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer"]
+margin_right = 1024.0
+margin_bottom = 50.0
+custom_styles/separator = SubResource( 1 )
+custom_constants/separation = 50
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_top = 54.0
+margin_right = 1024.0
+margin_bottom = 103.0
+custom_fonts/font = SubResource( 2 )
+text = "Credits
+"
+align = 1
+valign = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer"]
+margin_top = 107.0
+margin_right = 1024.0
+margin_bottom = 563.0
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer"]
+margin_right = 1024.0
+margin_bottom = 456.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_right = 1024.0
+margin_bottom = 50.0
+custom_styles/separator = SubResource( 3 )
+custom_constants/separation = 50
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 54.0
+margin_right = 1024.0
+margin_bottom = 456.0
+size_flags_vertical = 3
+custom_fonts/normal_font = SubResource( 4 )
+bbcode_enabled = true
+bbcode_text = "[center]The Illusion Choice[/center]
+[center][b]Developed by Beeshoy Metry[/b][/center]
+
+[center]Writing and Dialog:[/center]
+[center][b]All dialog written by Beeshoy Metry[/b][/center]
+[center][b]Branching dialog powered by Inky (by Inkle Studios)[/b][/center]
+
+[center]Engine:[/center]
+[center][b]Made with Godot Engine (v3.3)[/b][/center]
+
+[center]Tools and Libraries:[/center]
+[center][b]Godot Engine v3.3 (MIT License)[/b][/center]
+[center][b]Inky by Inkle Studios (MIT License)[/b][/center]
+[center][b]inkgd by Ephread (MIT License)[/b][/center]
+
+[center]Art Assets:[/center]
+[center][b]2D sprites and tilesets from itch.io [/b][/center]
+[center][b]Living Room (16x16 Tileset)  by Dai420 [/b][/center]
+[center][b]Pixel Furniture  by OblivionStudio [/b][/center]
+[center][b]Pxiel Art UI borders  by GX310 [/b][/center]
+[center][b]Detective/Cop Game Template Assets by snallygaster [/b][/center]
+[center][b]Sketch fantasy items/icons demo version by Aeynit [/b][/center]
+[center][b]Sherlock BBC Assets - Pixel Art by Mónica P. Arroyo [/b][/center]
+[center][b]Character Silhouettes: Bureaucrats by RAIT Visual Works [/b][/center]
+[center][b]Silhouette Sprites CITY PEOPLE by Najmah Salam [/b][/center]
+[center][b]Agent Character by chasersgaming [/b][/center]
+[center][b]Apocalypse Asset Pack by cuddle bug [/b][/center]
+[center][b]7 Blood/Horror FX Elements [free] by Matthew L. Hornbostel [/b][/center]
+[center][b]Detective From The Futur by hugues laborde [/b][/center]
+
+[center]Other Visual Assets:[/center]
+[center][b]Main Menu background designed by Freepik (www.freepik.com)[/b][/center]
+[center][b]AI-generated images created by Beeshoy Metry using OpenArt (openart.ai)[/b][/center]
+
+[center]Music and Sound Effects:[/center]
+[center][b]Royalty-free sound effects and music sourced from pixabay.com[/b][/center]
+[center][b]detective/noir/mystery/dark synth music pack by 1144ghost from itch.io[/b][/center]
+
+[center]Fonts:[/center]
+[center][b]UT Shadigo Trial by Universitype Foundry (FFP License)[/b][/center]
+[center][b] Silver by Poppy Works from itch.io (CC BY 4.0)  [/b][/center]
+
+[center]Academic Supervision:[/center]
+[center][b]This game was developed as part of a Master's Thesis project
+at the University of Klagenfurt, Game Studies and Engineering Department[/b][/center]
+[center][b]Supervisor: Univ.-Prof. Dipl.-Ing. Dr. Wilfried Elmenreich[/b][/center]
+[center][b]Academic Year: 2024–2025[/b][/center]
+
+[center]Special Thanks:[/center]
+[center][b]Godot and Inky communities[/b][/center]
+[center][b]Free and open-source asset creators[/b][/center]
+[center][b]Everyone who supported development [/b][/center]
+
+[center]Thank you for playing![/center]"
+text = "The Illusion Choice
+Developed by Beeshoy Metry
+
+Writing and Dialog:
+All dialog written by Beeshoy Metry
+Branching dialog powered by Inky (by Inkle Studios)
+
+Engine:
+Made with Godot Engine (v3.3)
+
+Tools and Libraries:
+Godot Engine v3.3 (MIT License)
+Inky by Inkle Studios (MIT License)
+inkgd by Ephread (MIT License)
+
+Art Assets:
+2D sprites and tilesets from itch.io 
+Living Room (16x16 Tileset)  by Dai420 
+Pixel Furniture  by OblivionStudio 
+Pxiel Art UI borders  by GX310 
+Detective/Cop Game Template Assets by snallygaster 
+Sketch fantasy items/icons demo version by Aeynit 
+Sherlock BBC Assets - Pixel Art by Mónica P. Arroyo 
+Character Silhouettes: Bureaucrats by RAIT Visual Works 
+Silhouette Sprites CITY PEOPLE by Najmah Salam 
+Agent Character by chasersgaming 
+Apocalypse Asset Pack by cuddle bug 
+7 Blood/Horror FX Elements [free] by Matthew L. Hornbostel 
+Detective From The Futur by hugues laborde 
+
+Other Visual Assets:
+Main Menu background designed by Freepik (www.freepik.com)
+AI-generated images created by Beeshoy Metry using OpenArt (openart.ai)
+
+Music and Sound Effects:
+Royalty-free sound effects and music sourced from pixabay.com
+detective/noir/mystery/dark synth music pack by 1144ghost from itch.io
+
+Fonts:
+UT Shadigo Trial by Universitype Foundry (FFP License)
+ Silver by Poppy Works from itch.io (CC BY 4.0)  
+
+Academic Supervision:
+This game was developed as part of a Master's Thesis project
+at the University of Klagenfurt, Game Studies and Engineering Department
+Supervisor: Univ.-Prof. Dipl.-Ing. Dr. Wilfried Elmenreich
+Academic Year: 2024–2025
+
+Special Thanks:
+Godot and Inky communities
+Free and open-source asset creators
+Everyone who supported development 
+
+Thank you for playing!"
+
+[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer"]
+margin_top = 567.0
+margin_right = 1024.0
+margin_bottom = 600.0
+custom_fonts/font = SubResource( 5 )
+text = "Exit"
+flat = true
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_Exit_pressed"]
