@@ -3,7 +3,6 @@
 .export/
 export.cfg
 export_presets.cfg
-*.godot
 
 # C# build artifacts
 *.mono/
