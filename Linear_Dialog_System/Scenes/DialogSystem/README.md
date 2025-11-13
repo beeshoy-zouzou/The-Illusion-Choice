@@ -12,7 +12,7 @@ It allows you to create story-driven conversations with **linear and branching d
 - Supports both linear and mixed linear/branching dialogs  
 - The system can be tested freely in a seperate scene  
 - Currently, integration with NPCs is done manually
-- Future plan: pprovide editor tools to integrate the dialog system directly into NPCs.
+- Future plan: provide editor tools to integrate the dialog system directly into NPCs.
 
 ---
 
