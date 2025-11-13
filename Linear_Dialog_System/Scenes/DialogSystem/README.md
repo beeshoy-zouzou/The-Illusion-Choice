@@ -1,7 +1,6 @@
 # Dialog System — The Illusion Choice
 
-This dialog system for **The Illusion Choice** is built with **Inky** and **Godot** using the inkgd add-on developed by 
-Frédéric Maquin: https://github.com/ephread/inkgd .
+This dialog system for **The Illusion Choice** is built with **Inky** and **Godot** using the inkgd add-on.
 It allows you to create story-driven conversations with **linear and branching dialogs** inside Godot.
 > This is a **technical prototype** for testing dialog flow.
 
